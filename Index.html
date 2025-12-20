@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Site de Estudo HTML & CSS</title>
+
+    <!-- CSS BÁSICO -->
+    <style>
+        /* Estilo geral da página */
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Conteúdo principal */
+        main {
+            padding: 20px;
+        }
+
+        /* Caixa genérica */
+        .caixa {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        
+
+.label-centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    width: 100%;          /* ocupa toda a largura do container */
+    box-sizing: border-box;
+}
+
+.linha {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    
+}
+
+.linha span {
+    width: 60px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 250px;
+    box-sizing: border-box;
+}
+
+.linha input {
+    flex: 1;              /* 🔥 ISSO É O SEGREDO */
+    box-sizing: border-box;
+}
+
+a {
+    color: black;       /* ou black, depende do fundo */
+    text-decoration: none; /* tira o sublinhado */
+  }
+
+a:hover {
+    color: blue;  /* quando passa o mouse */
+  }
+
+
+
+        /* Listas */
+        ul {
+            list-style-type: square;
+        }
+
+        ol {
+            list-style-type: decimal;
+        }
+
+        /* Imagem */
+        img {
+            max-width: 100%;
+            border-radius: 6px;
+        }
+
+        /* Formulário */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input, textarea, select, button {
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        button {
+            background-color: #222;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #444;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>Meu Primeiro Site de Estudo</h1>
+        <p>HTML + CSS básico, com vários elementos</p>
+    </header>
+
+    <!-- CONTEÚDO -->
+    <main>
+
+        <!-- CAIXA DE TEXTO -->
+        <div class="caixa">
+            <h2>Sobre este site</h2>
+            <p>
+                Este site foi feito apenas para estudo.
+                Ele contém listas, imagens, formulários e estilos básicos em CSS.
+            </p>
+        </div>
+
+        <!-- LISTA NÃO ORDENADA -->
+        <div class="caixa">
+            <h2>Lista de interesses</h2>
+            <ul>
+                <li>Programação</li>
+                <li>Filosofia</li>
+                <li>Teologia</li>
+                <li>Poesia</li>
+            </ul>
+        </div>
+
+        <!-- LISTA ORDENADA -->
+        <div class="caixa">
+            <h2>Passos para estudar HTML</h2>
+            <ol>
+                <li>Entender a estrutura básica</li>
+                <li>Aprender as principais tags</li>
+                <li>Praticar bastante</li>
+                <li>Adicionar CSS</li>
+            </ol>
+        </div>
+
+        <!-- IMAGEM -->
+        <div class="caixa">
+            <h2>Imagem de exemplo</h2>
+            <img src="https://via.placeholder.com/600x300" alt="Imagem de exemplo">
+            <p>Imagem carregada por URL externa.</p>
+        </div>
+
+        <!-- FORMULÁRIO -->
+        <div class="caixa">
+            <h2 style="text-align: center;">Formulário de contato</h2>
+
+            <form>
+                <label class="linha">
+                    <span>Nome:</span>
+                <input type="text" name="Nome" placeholder="Digite seu nome">
+                </label>
+
+                <label class="linha">
+                    <span>Email:</span>
+                     <input type="email" name="Email" placeholder="Digite seu Email">
+                </label>
+
+                <label  class="label-centro">
+                    Mensagem:
+                    <textarea name="Mensagem" rows="4" placeholder="Digite sua mensagem"></textarea>
+                </label>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <!-- CAIXA DE VOTAÇÃO -->
+        <div class="caixa">
+            <h2 style="text-align:center">Enquete</h2>
+            <p>O que você mais quer aprender?</p>
+
+            <form>
+                <label>
+                    <input type="radio" name="voto"> HTML
+                </label>
+
+                <label>
+                    <input type="radio" name="voto"> CSS
+                </label>
+
+                <label>
+                    <input type="radio" name="voto"> JavaScript
+                </label>
+
+                <button type="submit">Votar</button>
+            </form>
+        </div>
+        
+        <div class="caixa">
+        	<h2 style="text-align:center">Entre em contato</h2>
+            <p>Email: <a href="https://outlook.live.com/mail/0/">Flavinhodopneu</a></p>
+        </div>
+        
+      
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>Site de estudo • HTML & CSS</p>
+    </footer>
+
+</body>
+</html>
