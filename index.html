@@ -37,16 +37,16 @@
         }
         
 
-.label-centro {
+    .label-centro {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+        }
 
-textarea {
+        textarea {
     width: 100%;          /* ocupa toda a largura do container */
     box-sizing: border-box;
-}
+        }
 
 .linha {
     display: flex;
@@ -54,22 +54,28 @@ textarea {
     gap: 10px;
     width: 100%;
     
-}
+        }
 
-.linha span {
-    width: 60px;
-}
+    .linha span {
+    width: 100px;
+    }
 
-input[type="text"],
-input[type="email"] {
+    input[type="text"],
+    input[type="email"] {
     width: 250px;
     box-sizing: border-box;
-}
+    }
 
-.linha input {
+    .linha input {
     flex: 1;              /* 🔥 ISSO É O SEGREDO */
     box-sizing: border-box;
-}
+    }
+        .linha textarea {
+    flex: 1;
+    box-sizing: border-box;
+    }
+
+
 
 a {
     color: black;       /* ou black, depende do fundo */
